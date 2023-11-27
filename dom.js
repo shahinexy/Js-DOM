@@ -51,9 +51,25 @@ function secondClick(){
 }
 
 // create new html element (nodes)
+// const newP = document.createElement('p');
+// const node = document.createTextNode('This is new paragraph create by js code');
+// newP.appendChild(node);
+// const element = document.querySelector('.div1');
+// element.appendChild(newP);
+
+// create new html element & set position (nodes)
 const newP = document.createElement('p');
 const node = document.createTextNode('This is new paragraph create by js code');
 newP.appendChild(node);
 const element = document.querySelector('.div1');
-element.appendChild(newP);
+const p2 = document.querySelector('#new_nod_1')
+element.insertBefore(newP, p2);
 
+// remove element
+// const removeElement = document.querySelector('#reomove');
+// removeElement.remove();
+
+// removechild 
+const parent = document.querySelector('.div1')
+const removeElement = document.querySelector('#reomove');
+parent.removeChild(removeElement);
