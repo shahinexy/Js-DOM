@@ -65,16 +65,16 @@ function secondClick(){
 // const p2 = document.querySelector('#new_nod_1')
 // element.insertBefore(newP, p2);
 
-// remove element
+// remove element method
 // const removeElement = document.querySelector('#reomove');
 // removeElement.remove();
 
-// remove child 
+// removechild  method
 const parent = document.querySelector('.div1')
 const removeElement = document.querySelector('#reomove');
 parent.removeChild(removeElement);
 
-// repleace child
+// repleacechild method
 const newP = document.createElement('p');
 const node = document.createTextNode('repleaced new paragraph create by js code');
 newP.appendChild(node);
