@@ -38,3 +38,14 @@ function clickToChange(){
     const title = document.querySelector('#onclick');
     title.innerHTML = 'Hello world';
 }
+
+//  addEventListener 
+const evenlist = document.querySelector('.addevenlist');
+evenlist.addEventListener('click', firstClick);
+evenlist.addEventListener('click', secondClick);
+function firstClick(){
+    alert('this is first event')
+}
+function secondClick(){
+    alert('this is second event')
+}
