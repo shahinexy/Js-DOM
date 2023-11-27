@@ -49,3 +49,11 @@ function firstClick(){
 function secondClick(){
     alert('this is second event')
 }
+
+// create new html element (nodes)
+const newP = document.createElement('p');
+const node = document.createTextNode('This is new paragraph create by js code');
+newP.appendChild(node);
+const element = document.querySelector('.div1');
+element.appendChild(newP);
+
