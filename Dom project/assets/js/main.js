@@ -4,10 +4,9 @@ const milestonesData = JSON.parse(data).data;
 function loadMilestones(){
     const milestones = document.querySelector('.milestones');
     milestones.innerHTML = `${milestonesData.map(function(milestone){
-        return `<div class="milestones">
-        <div class="milestone border-b">
+        return `<div class="milestone border-b  id="${milestone._id}">
           <div class="flex">
-            <div class="checkbox"><input type="checkbox" /></div>
+            <div class="checkbox"><input type="checkbox" onclick="markMilestone(this, ${milestone._id})" /></div>
             <div onclick="openMilestone(this, ${milestone._id})">
               <p>
                 ${milestone.name}
@@ -22,8 +21,7 @@ function loadMilestones(){
               </div>`
             }).join('')}
           </div>
-        </div>
-      </div>`
+        </div>`
     }).join('')}`
 }
 
@@ -59,5 +57,20 @@ const milestoneImg = document.querySelector('.milestoneImage');
 milestoneImg.onload = function(){
   this.style.opacity = '1';
 } 
+
+function markMilestone(checkBox, id){
+  const milestoneList = document.querySelector('.milestones');
+  const doneList = document.querySelector('.doneList');
+  const item = document.getElementById(id);
+  
+  if(checkBox.checked){
+    milestoneList.removeChild(item);
+    doneList.appendChild(item);
+  }
+  else{
+    milestoneList.appendChild(item);
+    doneList.removeChild(item);
+  }
+}
 
 loadMilestones();
