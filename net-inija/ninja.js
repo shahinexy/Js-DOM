@@ -17,3 +17,31 @@ listUl.addEventListener('click', function(click){
         li.parentElement.removeChild(li);
     }
 })
+
+
+// added form control
+const addList = document.forms['add_list'];
+addList.addEventListener('submit', function(add){
+    add.preventDefault();
+    const value = add.target.querySelector('input[type="text"]').value;
+    console.log(value);
+
+    // create element 
+    const newLi = document.createElement('li')
+    const addName = document.createElement('span')
+    const deleteBtn = document.createElement('span')
+
+    
+    //add content
+    addName.textContent = value;
+    deleteBtn.textContent = 'Delete';
+    
+    // add class
+    addName.classList.add('name');
+    deleteBtn.classList.add('delete')
+    
+    // append child
+    newLi.appendChild(addName);
+    newLi.appendChild(deleteBtn);
+    listUl.appendChild(newLi);
+})
