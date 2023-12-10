@@ -1,10 +1,11 @@
 const milestonesData = JSON.parse(data).data;
-
+// const [] = use
+// console.log(milestonesData);
 // load milestone data
 function loadMilestones(){
     const milestones = document.querySelector('.milestones');
     milestones.innerHTML = `${milestonesData.map(function(milestone){
-        return `<div class="milestone border-b  id="${milestone._id}">
+        return `<div class="milestone border-b"  id="${milestone._id}">
           <div class="flex">
             <div class="checkbox"><input type="checkbox" onclick="markMilestone(this, ${milestone._id})" /></div>
             <div onclick="openMilestone(this, ${milestone._id})">
@@ -51,8 +52,8 @@ function showMilestoneImg(id){
   milestoneImg.src = milestonesData[id].image;
   title.innerText = milestonesData[id].name;
   description.innerText = milestonesData[id].description;
+  
 }
-
 const milestoneImg = document.querySelector('.milestoneImage');
 milestoneImg.onload = function(){
   this.style.opacity = '1';
