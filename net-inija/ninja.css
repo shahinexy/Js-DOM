@@ -1,6 +1,14 @@
 .container{
     max-width: 900px;
     margin: 50px auto;
+
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 ul li{
     margin: 20px 0;
