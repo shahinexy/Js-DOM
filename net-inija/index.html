@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ninja.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
         <div class="flex">
@@ -30,7 +32,7 @@
                     <span class="delete"> Delete</span>
                 </li>
             </ul>
-    
+
             <form id="add_list">
                 <div class="cekck_box">
                     <input type="checkbox" id="hide">
@@ -38,11 +40,27 @@
                 </div>
                 <input class="form_input" type="text" placeholder="add your list" />
                 <button class="btn" type="submit">Add</button>
-            </form>                
+            </form>
+        </div>
+
+        <div class="tabbed_content">
+            <ul class="tabs">
+                <li data-target="#about" class="active">About</li>
+                <li data-target="#contact">Contact</li>
+            </ul>
+            <div class="panel active" id="about">
+                <p>About Us</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellendus ea eveniet sed! Odio facere doloribus, ducimus reiciendis delectus, pariatur, earum velit illo quisquam eveniet rerum incidunt fuga corporis atque.</p>
+            </div>
+            <div class="panel" id="contact">
+                <p>Contact Us</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellendus ea eveniet sed! Odio facere doloribus, ducimus reiciendis delectus, pariatur, earum velit illo quisquam eveniet rerum incidunt fuga corporis atque.</p>
             </div>
         </div>
+    </div>
     </div>
 
     <script src="ninja.js"></script>
 </body>
+
 </html>

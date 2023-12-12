@@ -49,10 +49,25 @@ ul li{
     margin: 10px 0;
 }
 
-.box{
-    margin-top: 20px;
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    padding: 10px;
+/* ========= */
+.tabs{
+    display: flex;
+    gap: 30px;
+}
+.tabbed_content ul li{
+    background-color: yellowgreen;
+    padding: 20px 30px;
+    list-style: none;
+    cursor: pointer;
+}
+.tabbed_content ul li:hover{
+    background-color: yellow;
+}
+
+.tabbed_content .panel.active{
+    margin: 20px 0;
+    display: block;
+}
+.tabbed_content .panel{
+    display: none;
 }
