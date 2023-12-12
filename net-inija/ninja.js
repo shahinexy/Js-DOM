@@ -55,3 +55,21 @@ checkBox.addEventListener('change', function(check){
         listUl.style.display = 'initial';
     }
 })
+
+
+// Search list
+const searchList = document.forms['search_fild'].querySelector('input');
+searchList.addEventListener('keyup', function(e){
+    const term = e.target.value.toLowerCase();
+    const list = listUl.getElementsByTagName('li');
+    Array.from(list).forEach(function(list){
+        const title = list.firstElementChild.textContent;
+        if(title.toLowerCase().indexOf(term) != -1){
+            list.style.display = 'block';
+        } else{
+            list.style.display = 'none';
+
+        }
+    })
+
+})
