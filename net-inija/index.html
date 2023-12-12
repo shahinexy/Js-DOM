@@ -9,6 +9,9 @@
 <body>
     <div class="container">
         <div class="flex">
+            <form id="search">
+                <input class="form_input" type="text" placeholder="search your list..">
+            </form>
             <ul>
                 <li>
                     <span class="name">Name of the list1</span>
@@ -29,9 +32,16 @@
             </ul>
     
             <form id="add_list">
-                <input type="text" placeholder="add your list" />
-                <button>Add</button>
+                <div class="cekck_box">
+                    <input type="checkbox" id="hide">
+                    <label for="hide">Hide all list</label>
+                </div>
+                <input class="form_input" type="text" placeholder="add your list" />
+                <button class="btn" type="submit">Add</button>
             </form>
+            <div class="box">
+                
+            </div>
         </div>
     </div>
 

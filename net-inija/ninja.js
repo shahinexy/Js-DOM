@@ -24,8 +24,8 @@ const addList = document.forms['add_list'];
 addList.addEventListener('submit', function(add){
     add.preventDefault();
     const value = add.target.querySelector('input[type="text"]').value;
-    console.log(value);
-
+    // console.log(value);
+ 
     // create element 
     const newLi = document.createElement('li')
     const addName = document.createElement('span')
@@ -44,4 +44,14 @@ addList.addEventListener('submit', function(add){
     newLi.appendChild(addName);
     newLi.appendChild(deleteBtn);
     listUl.appendChild(newLi);
+})
+
+// Check box
+const checkBox = document.querySelector('#hide');
+checkBox.addEventListener('change', function(check){
+    if(checkBox.checked){
+        listUl.style.display = 'none';
+    } else{
+        listUl.style.display = 'initial';
+    }
 })

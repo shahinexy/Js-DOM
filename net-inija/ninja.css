@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container{
     max-width: 900px;
     margin: 50px auto;
@@ -8,7 +14,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 ul li{
     margin: 20px 0;
@@ -23,4 +28,31 @@ ul li{
     padding: 5px;
     border-radius: 8px;
     cursor: pointer;
+}
+.form_input{
+    padding: 7px;
+    border-radius: 5px;
+    background-color: burlywood;
+}
+.btn{
+    padding: 7px 20px;
+    background-color: chocolate;
+    border: 2px solid blueviolet;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: blueviolet;
+    border: 2px solid chocolate;
+}
+.cekck_box{
+    margin: 10px 0;
+}
+
+.box{
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    padding: 10px;
 }
