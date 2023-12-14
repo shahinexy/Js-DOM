@@ -17,6 +17,13 @@ const h1Style = document.querySelector('.style');
 h1Style.style.color = 'green';
 h1Style.style.fontSize = '40px';
 
+const pera = document.querySelector('.css_style');
+pera.style.padding = '40px';
+pera.style.backgroundColor = 'red';
+pera.style.color = 'white';
+pera.style.borderRadius = '2rem'
+
+
 // animetion
 function move(){
     const animetion = document.querySelector('#animate');
