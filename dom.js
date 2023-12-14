@@ -21,7 +21,7 @@ const pera = document.querySelector('.css_style');
 pera.style.padding = '40px';
 pera.style.backgroundColor = 'red';
 pera.style.color = 'white';
-pera.style.borderRadius = '2rem'
+pera.style.borderRadius = '2rem';
 
 
 // animetion
