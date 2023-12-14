@@ -92,9 +92,10 @@ element.replaceChild(newP, p2)
 
 // Drop dwon 
 const dropDwon = document.querySelector('.main_item');
-const dropItem = document.querySelector('all_item');
+const dropItem = document.querySelector('.all_item');
+console.log(dropItem);
 dropDwon.addEventListener('click', function(e){
-    if(e.clicked){
+    if(e.checked){
         dropItem.style.display = 'block';
     }else{
         dropItem.style.display = 'none';
