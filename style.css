@@ -19,3 +19,6 @@ body{
     display: flex;
     margin: 5px auto;
   }
+  .all_item{
+    display: none;
+  }

@@ -88,3 +88,15 @@ newP.appendChild(node);
 const element = document.querySelector('.div1');
 const p2 = document.querySelector('#new_nod_1')
 element.replaceChild(newP, p2)
+
+
+// Drop dwon 
+const dropDwon = document.querySelector('.main_item');
+const dropItem = document.querySelector('all_item');
+dropDwon.addEventListener('click', function(e){
+    if(e.clicked){
+        dropItem.style.display = 'block';
+    }else{
+        dropItem.style.display = 'none';
+    }
+})
