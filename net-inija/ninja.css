@@ -65,9 +65,20 @@ ul li{
 }
 
 .tabbed_content .panel.active{
-    margin: 20px 0;
     display: block;
 }
 .tabbed_content .panel{
     display: none;
+}
+#about{
+    background-color: violet;
+    padding: 10px;
+}
+#blog{
+    background-color: tomato;
+    padding: 10px;
+}
+#contact{
+    background-color: teal;
+    padding: 10px;
 }

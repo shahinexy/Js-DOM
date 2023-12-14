@@ -77,7 +77,7 @@ searchList.addEventListener('keyup', function(e){
 
 // tabbed content
 const tabs = document.querySelector('.tabs');
-const panels = document.querySelector('.panel');
+const panels = document.querySelectorAll('.panel');
 tabs.addEventListener('click', function(e){
     if(e.target.tagName == 'LI'){
         const targetPanel = document.querySelector(e.target.dataset.target);
