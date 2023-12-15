@@ -58,6 +58,7 @@ function secondClick(){
 }
 
 // create new html element (nodes)
+
 // const newP = document.createElement('p');
 // const node = document.createTextNode('This is new paragraph create by js code');
 // newP.appendChild(node);
@@ -65,6 +66,7 @@ function secondClick(){
 // element.appendChild(newP);
 
 // create new html element & set position (nodes)
+
 // const newP = document.createElement('p');
 // const node = document.createTextNode('This is new paragraph create by js code');
 // newP.appendChild(node);
@@ -73,6 +75,7 @@ function secondClick(){
 // element.insertBefore(newP, p2);
 
 // remove element method
+
 // const removeElement = document.querySelector('#reomove');
 // removeElement.remove();
 
@@ -90,14 +93,10 @@ const p2 = document.querySelector('#new_nod_1')
 element.replaceChild(newP, p2)
 
 
-// Drop dwon 
+// Drop dwon          (not working)
 const dropDwon = document.querySelector('.main_item');
 const dropItem = document.querySelector('.all_item');
 console.log(dropItem);
-dropDwon.addEventListener('click', function(e){
-    if(e.checked){
-        dropItem.style.display = 'block';
-    }else{
-        dropItem.style.display = 'none';
-    }
+dropDwon.addEventListener('click', function(){
+    dropItem.style.display = 'block';
 })
