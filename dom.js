@@ -1,3 +1,5 @@
+// ================== By W3school ===================
+
 const p = document.getElementById('demo');
 p.innerHTML = "Hello world";
 
@@ -102,7 +104,7 @@ dropDwon.addEventListener('click', function(){
 })
 
 
-
+// ==================================================================
 // ==================================================================
 // <!-- parent & child relation -->
 const grandParent = document.querySelector('.list')
@@ -117,7 +119,7 @@ const children = grandParent.querySelectorAll('.item');
 // console.log(children);
 
 // if we want to go child to parent 
-const childTopa = document.querySelector('.item');-
+const childTopa = document.querySelector('.item');
 const parentToga = childTopa.parentElement;
 // console.log(parentToga);
 const grandpa = childTopa.closest('.list');
@@ -131,3 +133,18 @@ childTow.style.color = 'red';
 const firstchild = childTow.previousElementSibling;
 firstchild.style.color = 'green';
 // console.log(firstchild);
+
+// create element by js and insert
+const newElement = document.createElement('div');
+newElement.innerText = 'new element & insert befor & append child'
+newElement.className = 'red';
+newElement.setAttribute('id', 'red');
+newElement.setAttribute('title', 'red_title');
+// insert
+const list = document.querySelector('.list');
+const h2Element = list.querySelector('h2');
+// list.insertBefore(newElement, h2Element);
+
+// append child for adding in last // appendChild contain only html element and append html element and text content also. appendChild return the element but the append return undefined. in append u can add multiple thing.
+list.appendChild(newElement);
+list.append('hellow world');

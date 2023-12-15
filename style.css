@@ -22,3 +22,7 @@ body{
   .all_item{
     display: none;
   }
+  .list{
+    background-color: bisque;
+    padding: 10px;
+  }
