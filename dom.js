@@ -96,7 +96,29 @@ element.replaceChild(newP, p2)
 // Drop dwon          (not working)
 const dropDwon = document.querySelector('.main_item');
 const dropItem = document.querySelector('.all_item');
-console.log(dropItem);
+// console.log(dropItem);
 dropDwon.addEventListener('click', function(){
     dropItem.style.display = 'block';
 })
+
+
+
+// ==================================================================
+// <!-- parent & child relation -->
+const grandParent = document.querySelector('.list')
+const parentcls = grandParent.children;
+// console.log(parentcls);
+const childcls = parentcls[1].children ;
+// console.log(childcls);
+// console.log(childcls[2]);
+
+// direct way to catch child 
+const children = grandParent.querySelectorAll('.item');
+// console.log(children);
+
+// if we want to go child to parent 
+const childTopa = document.querySelector('.item');
+const parentToga = childTopa.parentElement;
+// console.log(parentToga);
+const grandpa = childTopa.closest('.list');
+console.log(grandpa);
