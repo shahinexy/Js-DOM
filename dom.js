@@ -117,8 +117,17 @@ const children = grandParent.querySelectorAll('.item');
 // console.log(children);
 
 // if we want to go child to parent 
-const childTopa = document.querySelector('.item');
+const childTopa = document.querySelector('.item');-
 const parentToga = childTopa.parentElement;
 // console.log(parentToga);
 const grandpa = childTopa.closest('.list');
-console.log(grandpa);
+// console.log(grandpa);
+
+// get sibling
+const childOne = document.querySelector('.item');
+const childTow = childOne.nextElementSibling;
+childTow.style.color = 'red';
+// console.log(childTow);
+const firstchild = childTow.previousElementSibling;
+firstchild.style.color = 'green';
+// console.log(firstchild);
