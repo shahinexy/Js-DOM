@@ -26,3 +26,36 @@ body{
     background-color: bisque;
     padding: 10px;
   }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  .row{
+    width: 300px;
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: thistle;
+    padding: 20px;
+  }
+  .input{
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .show_hid{
+    padding: 3px;
+    background-color: aquamarine;
+    cursor: pointer;
+    display: inline-block;
+    width: 40%;
+  }
+  .btn{
+    width: 70%;
+    padding: 7px;
+    margin-top: 10px;
+    background-color: yellowgreen;
+  }

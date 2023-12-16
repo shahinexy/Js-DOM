@@ -148,3 +148,17 @@ const h2Element = list.querySelector('h2');
 // append child for adding in last // appendChild contain only html element and append html element and text content also. appendChild return the element but the append return undefined. in append u can add multiple thing.
 list.appendChild(newElement);
 list.append('hellow world');
+
+
+// ====== login form ========
+const password = document.querySelector('#password');
+const showHid = document.querySelector('.show_hid');
+showHid.addEventListener('click', ()=>{
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    if(showHid.innerText === 'Show'){
+         showHid.innerText = 'Hide';
+    } else{
+        showHid.innerText = "Show";
+    }
+})
